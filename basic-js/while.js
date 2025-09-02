@@ -1,0 +1,7 @@
+let num = 0;
+
+while(num <15) {
+    console.log('hello!');
+    num = num+1;
+}
+

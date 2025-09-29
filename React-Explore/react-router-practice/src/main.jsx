@@ -9,6 +9,7 @@ import Banner from './components/Banner.jsx';
 import Home from './components/Home.jsx';
 import Users from './components/Users.jsx';
 import Users2 from './components/Users2.jsx';
+import UsersDetails from './components/UsersDetails.jsx';
 
   const userPromise = fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json())
 
@@ -27,7 +28,10 @@ import Users2 from './components/Users2.jsx';
           element: <Suspense fallback={<p>loading....</p>}>
             <Users2 userPromise={userPromise}></Users2>
           </Suspense>
-        }
+        },
+        {path:'users/:userId',
+          loader:({params}) => fetch(`https://jsonplaceholder.typicode.com/users/${params.userId}`),
+        Component:UsersDetails}
       ]
     }
   ])

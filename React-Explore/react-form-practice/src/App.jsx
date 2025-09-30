@@ -1,5 +1,6 @@
 
 import './App.css'
+import ControlledForm from './components/ControlledForm'
 import Form from './components/Form'
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
 
   return (
     <>
-      <Form></Form>
+      {/* <Form></Form> */}
+      <ControlledForm></ControlledForm>
     </>
   )
 }

@@ -18,7 +18,7 @@ const MainLayout = () => {
             <nav>
                 <Navbar></Navbar>
             </nav>
-            <main className='grid grid-cols-12 w-11/12 mx-auto *:border my-3'>
+            <main className='grid grid-cols-12 w-11/12 mx-auto my-3 mt-16 gap-8'>
                 <aside className='col-span-3'>
                     <LeftAside></LeftAside>
                 </aside>

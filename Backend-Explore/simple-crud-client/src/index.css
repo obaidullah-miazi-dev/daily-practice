@@ -66,3 +66,19 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.box{
+  background-color: antiquewhite;
+  font-weight: bold;
+  color: #1a1a1a;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  width: 350px;
+}
+
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

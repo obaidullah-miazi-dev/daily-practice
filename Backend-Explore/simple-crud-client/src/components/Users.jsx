@@ -85,6 +85,9 @@ const Users = () => {
                         <p>Name: {user.name}</p>
                         <p>Email: {user.email}</p>
                         <Link to={`/users/${user._id}`}>Details</Link> <br />
+                        <Link to={`update/${user._id}`}>
+                        <button>Edit User</button>
+                        </Link>
                         <button onClick={()=>handleDeleteUser(user._id)}>Delete User</button>
                     </div>)
                 }
